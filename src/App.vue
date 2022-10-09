@@ -1,9 +1,26 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div class="common-layout">
+    <el-container class="wrapper">
+      <el-header class="header" height="5vh">
+
+
+        <nav>
+          <router-link to="/">登录</router-link> |
+          <router-link to="/about">功能</router-link>
+        </nav>
+
+      </el-header>
+
+      <el-main class="main">
+        <router-view/>
+
+      </el-main>
+
+
+
+      <el-footer class="Footer" height=4vh >  @ 版权所有 2022</el-footer>
+    </el-container>
+  </div>
 </template>
 
 <style>
@@ -25,6 +42,36 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: aliceblue;
 }
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #42b983;
+}
+.Footer {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  background: cornflowerblue;
+  align-items: center;
+  justify-content: center;
+}
+.el-row{
+  height: 5vh;
+}
+
 </style>
