@@ -6,7 +6,7 @@
 
         <nav>
           <router-link to="/">登录</router-link> |
-          <router-link to="/about">功能</router-link>
+          <router-link to="/about">用户</router-link>
         </nav>
 
       </el-header>
@@ -15,10 +15,7 @@
         <router-view/>
 
       </el-main>
-
-
-
-      <el-footer class="Footer" height=4vh >  @ 版权所有 2022</el-footer>
+      <el-footer class="Footer" height=4vh >  @ 版权所有 2022 YDH</el-footer>
     </el-container>
   </div>
 </template>
@@ -52,7 +49,7 @@ nav a.router-link-exact-active {
 }
 .header {
   position: fixed;
-  top: 0;
+  top: 0px;
   left: 0;
   display: flex;
   width: 100%;
